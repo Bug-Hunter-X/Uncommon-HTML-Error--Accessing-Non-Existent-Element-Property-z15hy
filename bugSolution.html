@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Check if element exists before accessing its property
+    let element = document.getElementById('myDiv');
+    if (element) {
+      element.innerHTML = "Hello";
+    } else {
+      console.error('Element not found');
+    }
+  </script>
+</body>
+</html>
